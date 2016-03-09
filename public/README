@@ -1,0 +1,13 @@
+This is the official package repository for OS.js
+
+Current builds:
+- NW
+- Standalone
+- X11/Debian
+- Arduino
+- Intel Edison
+
+Information:
+- Source: https://github.com/os-js/OS.js
+- Homepage: http://os.js.org/
+- Contact: andersevenrud@gmail.com

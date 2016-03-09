@@ -1,0 +1,109 @@
+/* Elements */
+html, body {
+  height : 100%;
+}
+
+header, main, footer {
+  display : block;
+}
+
+div, header, main, footer {
+  box-sizing : border-box;
+}
+
+/* Base (unts-unts-unts) */
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%;
+  background-color : #fff;
+}
+
+  body {
+    margin : 0;
+    padding : 0;
+    text-align : center;
+  }
+
+    a {
+      text-decoration : none;
+    }
+
+header {
+  background-color : rgb(87, 42, 121);
+  height : 255px;
+  padding : 20px;
+}
+
+  header > img {
+    max-width : 100%;
+  }
+
+main {
+  min-height : 100%;
+  min-height : calc(100% - 355px);
+  max-width : calc(100% - 40px);
+  width : 1024px;
+
+  padding : 20px;
+  margin : 0 auto;
+  text-align : left;
+}
+
+  main > h1 {
+    margin : 0;
+    margin-top : 40px;
+    margin-bottom : 40px;
+    padding : 0;
+  }
+
+  main > pre {
+    background-color : #f2f2f2;
+    padding : 20px;
+    overflow : auto;
+  }
+
+  main > table {
+    width : 100%;
+    margin-top : 40px;
+    margin-bottom : 40px;
+  }
+
+  main > table td,
+  main > table th {
+    padding : 5px;
+  }
+
+  main > table tr *:nth-child(2) {
+    width : 200px;
+    text-align : right;
+  }
+  main > table tr *:nth-child(3) {
+    width : 100px;
+    text-align : right;
+  }
+
+footer {
+  background-color : #f2f2f2;
+  font-size : 85%;
+  height : 100px;
+  line-height : 100px;
+}
+
+/* Responsive */
+@media (max-width:420px) {
+  header {
+    height : auto;
+  }
+}
+@media (max-width:600px) {
+  html {
+    font-size: 80%;
+  }
+  main {
+    max-width : 100%;
+    padding : 5px;
+  }
+  td, th {
+    padding : 2px;
+  }
+}
