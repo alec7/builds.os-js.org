@@ -1,13 +1,14 @@
 #!/bin/bash
 
-REV=$(cd source; git rev-list --count master)
-
 rm -rf nightly/*
 rm -f nightly.zip
 rm -rf source/.standalone
 
 (cd source; git checkout -- dist)
 (cd source; git pull)
+
+REV=$(cd source; git rev-list --count master)
+
 (cd source; npm install)
 (cd source; grunt all standalone)
 

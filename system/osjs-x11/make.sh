@@ -1,8 +1,8 @@
 #!/bin/bash
 
-REV=$(cd source; git rev-list --count master)
-
 (cd source; rm -rf dist && git checkout -- dist dist-dev && git pull)
+
+REV=$(cd source; git rev-list --count master)
 
 rm source/*.deb
 (cd source; ./bin/build-deb.sh osjs 2.0.0-$REV amd64)

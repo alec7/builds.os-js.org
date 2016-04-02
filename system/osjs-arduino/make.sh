@@ -1,5 +1,6 @@
 #!/bin/bash
 
+(cd source; git pull)
 REV=$(cd source; git rev-list --count master)
 
 #rm -rf source/.arduino
